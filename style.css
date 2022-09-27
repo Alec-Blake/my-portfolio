@@ -1,16 +1,26 @@
 /*General Styles*/
+
 body{
+  /*This creates removes unwanted spacing between sections, as well as ensures a more balanced structure compared to box-sizing:content-box*/
   margin:0;
   background-color:#EBEAEA;
   box-sizing: border-box;
 }
+
+hr {
+/*Makes a dividing line without spacing between divisions*/
+margin:0;
+}
+
 main{
+/*Determines the main background color, and spacing between sections*/
   background-color:#EBEAEA;
   margin:0;
   padding-bottom:0;
 }
 
 header{
+/*Determines the color of the top banner, text placement, and thickness and division spacing*/
   background-color: #520008;
   height:175px;
   text-align:center;
@@ -19,6 +29,7 @@ header{
 }
 
 nav{
+  /*Determines text details, as well as spacing of division*/
   font-family:"Fredericka the Great", 'Times New Roman', serif;
   font-size:25px;
   text-transform:uppercase;
@@ -27,11 +38,18 @@ nav{
   margin:35px;
 }
 
-section {
+article {
+/*Determines group text placement in Main Section*/
 	padding: 0 25%;
 }
 
+section {
+/*Determines group text placement in Main Section*/
+  padding: 0 25%;
+}
+
 footer {
+/*Determines color, thickness and spacing of division for the footer banner*/
   background-color:#520008;
   height:175px;
   margin-top:0;
@@ -41,6 +59,7 @@ footer {
 /* Type Styles */
 
 h1.logo{
+/*Determines text details of h1 specifically in the header and division spacing*/
   color: #D7D6D6;
   font-size:57px;
   font-family:"Fredericka the Great", 'Times New Roman', serif;
@@ -49,6 +68,7 @@ h1.logo{
 }
 
 h2.logo{
+  /*Determines text details of h2 specifically in the header and division spacing*/
   color: #D7D6D6;
   font-size:25px;
   font-weight:900;
@@ -59,35 +79,41 @@ h2.logo{
 }
 
 main a{
+/*Determines text details within <a> tag specifically in the main division */
   font-family:"Montserrat", Arial, sans-serif;;
   font-weight:900;
   text-decoration:none;
 }
 
+/*Determines the colors of text specifically for links in the header*/
 nav a:link {color:#D3D3D3}
 nav a:visited {color:#EFCAA9}
 nav a:hover{color:#F5F5F5}
 nav a:active{color:#F5E1CC}
 
 h1, h2, h3 {
+/*Determines color details and placement of text in h1, h2, and h3 in the main division*/
   color:#520008;
   font-family:"Fredericka the Great", 'Times New Roman', serif;
   font-weight:900;
   text-align:center;
 }
 
+/*Determines color of text specifically for links in the main division */
 a:link {color:#66000C}
 a:visited {color:#3D0007}
 a:hover{color:#A30013}
 a:active{color:#FF1F39}
 
 p, li {
+  /*Determines the text details and placement of words for listed items and sentences*/
   color:#3D3D3D;
   font-family:"Montserrat", Arial, sans-serif;;
   line-height:27px;
 }
 
 footer p{
+/*Determines the text details and placement of words in the footer*/
   color: #D7D6D6;
   font-family:"Fredericka the Great", 'Times New Roman', serif;
   font-size:25px;
@@ -100,11 +126,14 @@ footer p{
 /*Element Styles*/
 
 img{
+/*Determines width and spacing details of images*/
   width:50%;
   margin:50px;
   padding:0 20%;
 }
+
 .border-top{
+/*Adds a border to the top of whichever element this class is attached to*/
   border-top:3px solid #520008;
   padding-top:20px;
 }
